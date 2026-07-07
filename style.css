@@ -1,0 +1,123 @@
+/* ---------- Reset & base ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f8fa;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* ---------- Navbar ---------- */
+nav {
+  background: #1f2933;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+nav a {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav a:hover, nav a.active {
+  background: #3e8ed0;
+}
+
+/* ---------- Layout ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem;
+}
+section { margin-bottom: 2.5rem; }
+h1 { font-size: 2rem; margin-bottom: 0.5rem; color: #1f2933; }
+h2 { font-size: 1.4rem; margin-bottom: 0.8rem; color: #1f2933; }
+p { margin-bottom: 0.8rem; }
+
+/* ---------- Hero (home page) ---------- */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #3e8ed0, #1f2933);
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.hero h1 { color: #fff; font-size: 2.4rem; }
+.hero p { color: #dbe7f0; font-size: 1.1rem; }
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #1f2933;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* ---------- Cards (skills / projects) ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.card h3 { margin-bottom: 0.4rem; color: #1f2933; }
+
+/* ---------- Skill bar ---------- */
+.skill-bar-bg {
+  background: #e0e0e0;
+  border-radius: 6px;
+  height: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  background: #3e8ed0;
+  height: 100%;
+}
+
+/* ---------- Timeline (resume) ---------- */
+.timeline-item {
+  border-left: 3px solid #3e8ed0;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.timeline-item .date { font-size: 0.85rem; color: #666; }
+
+/* ---------- Form (contact) ---------- */
+form { display: flex; flex-direction: column; gap: 0.8rem; max-width: 400px; }
+input, textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button {
+  background: #3e8ed0;
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
